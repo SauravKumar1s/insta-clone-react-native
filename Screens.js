@@ -1,7 +1,5 @@
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { Image, StyleSheet, SafeAreaView } from "react-native";
-
-const Tab = createBottomTabNavigator();
+import { Image, StyleSheet } from "react-native";
 
 import HomeScreen from "./screens/Home";
 import SearchScreen from "./screens/Search";
@@ -17,7 +15,9 @@ import {
   ReelFilled,
   Shop,
   ShopFilled,
-} from "./Icons";
+} from "./icons";
+
+const Tab = createBottomTabNavigator();
 
 function Screens() {
   return (
@@ -89,7 +89,7 @@ function Screens() {
                   borderWidth: focused ? 1 : 0,
                 }}
                 source={{
-                  uri: "https://pbs.twimg.com/profile_images/1631002938201047053/bsNmSWQY_400x400.jpg",
+                  uri: "https://scontent.fblr4-1.fna.fbcdn.net/v/t39.30808-6/337893074_917582939451281_8817675646406244129_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=730e14&_nc_ohc=J6QLB2IVuWwAX9rKwjD&_nc_ht=scontent.fblr4-1.fna&oh=00_AfCNi1f9wjjBR518dfFhINm6CA5DdI64BkbJHYTD0Bx9Fw&oe=647EDDC7",
                 }}
               />
             );
@@ -99,6 +99,7 @@ function Screens() {
     </Tab.Navigator>
   );
 }
+
 const styles = StyleSheet.create({
   avatar: {
     width: 24,

@@ -1,16 +1,18 @@
-import { StyleSheet, View } from "react-native";
-import { Messenger, Heart, Logo, Plus } from "../../Icons";
+import { StyleSheet, View, SafeAreaView } from "react-native";
+import { Messenger, Heart, Logo, Plus } from "../../icons";
 
 function Header() {
   return (
-    <View style={styles.header}>
-      <Logo size={120} fill="#000" />
-      <View style={styles.actions}>
-        <Plus size={24} fill="#000" style={styles.icon} />
-        <Heart size={24} fill="#000" style={styles.icon} />
-        <Messenger size={24} fill="#000" style={styles.icon} />
+    <SafeAreaView style={styles.container}>
+      <View style={styles.header}>
+        <Logo size={120} fill="#000" />
+        <View style={styles.actions}>
+          <Plus size={24} fill="#000" style={styles.icon} />
+          <Heart size={24} fill="#000" style={styles.icon} />
+          <Messenger size={24} fill="#000" style={styles.icon} />
+        </View>
       </View>
-    </View>
+    </SafeAreaView>
   );
 }
 

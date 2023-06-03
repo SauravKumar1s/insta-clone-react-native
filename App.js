@@ -11,5 +11,6 @@ export default function App() {
         <Screens />
       </NavigationContainer>
     </SafeAreaView>
+    
   );
 }

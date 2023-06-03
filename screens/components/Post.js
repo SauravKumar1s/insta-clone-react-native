@@ -8,7 +8,7 @@ import {
   Dots,
   Share,
   Bookmark,
-} from "../../Icons";
+} from "../../icons";
 import { dayjs } from "../../utils";
 import SeeMore from "react-native-see-more-inline";
 import FitImage from "./FitImage";

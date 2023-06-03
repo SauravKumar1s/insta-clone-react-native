@@ -4,7 +4,7 @@ import { View, Text } from "react-native";
 const Shop = () => {
   return (
     <View>
-      <Text>Shop</Text>
+      <Text>Shops</Text>
     </View>
   );
 };
